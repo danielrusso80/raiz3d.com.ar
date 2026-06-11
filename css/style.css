@@ -256,3 +256,84 @@ letter-spacing:2px;
 }
 
 }
+/* ==========================
+   MENU SUPERIOR
+========================== */
+
+.navbar{
+
+position:sticky;
+top:0;
+
+background:white;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 10%;
+
+box-shadow:
+0 2px 12px rgba(0,0,0,.08);
+
+z-index:1000;
+
+}
+
+.nav-logo{
+
+font-size:1.2rem;
+font-weight:700;
+
+color:var(--verde-oscuro);
+
+}
+
+.nav-links{
+
+display:flex;
+gap:30px;
+
+list-style:none;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:var(--verde-oscuro);
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--verde-medio);
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.nav-links{
+
+gap:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
